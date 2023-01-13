@@ -1,11 +1,19 @@
 
-//debeis crear dos funciones en la primera (crearArray) recibe un string con los nombres  separados por comas con .split separarlos "," y con .push meterlos en el array una vez creado el array retornarlo como parametro y en la segunda funcion (hacerSorteo) recibir el parametro y condicionar el array para que haga el sorteo.
-function sorteoAmigoInvisible(){
-    let participantes = [];
+//crea dos funciones 
+function crearArray(){
+    let participantes = [];//creo al array
     var inputText = document.querySelector("#participantes").value;
-    participantes.push(inputText);
+    if (inputText == "") {
+       alert("Debesde introducir los nombres de participantes"); 
+    }else{
+    //capturamos el valor
+    participantes.push(inputText);//y lo guardamos
+    console.log(participantes);//compruebo el array 
+    document.querySelector("#participantes").value = "";//vacio el input
+    }
+    }
     
-    
+    /*
     var participanteAleatorio1 = Match.floor(Match.randon() * participantesRestantes.length);
     var participanteAleatorio2 = Match.floor(Match.randon() * participantesRestantes.length);
-    }
+    */
