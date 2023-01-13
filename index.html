@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#fff" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
     <title>Sorteo amigo invisible</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <h1 class="display-1 p-3 text-center ">Sorteo amigo invisible</h1>
+      <h1 class="display-1 p-3 text-center">Sorteo amigo invisible</h1>
     </header>
+
     <main>
-        <div class="card  pietarjeta" style="width: 40rem;">
-            <img src="img/16692260977123.png" class="card-img-top" alt="image santa top secret">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-8">
+          <div class="card" style="width: 40rem">
+            <img
+              src="img/16692260977123.png"
+              class="card-img-top"
+              alt="imagen papá noel top secret"
+            />
             <div class="card-body">
                 <input id="participantes" type="text area" class="form-control"
                     placeholder="Intruduzca nombre" aria-label="Username"
-                    value="pepe, luis, jose, paco, fran, luisito"
                     aria-describedby="addon-wrapping">
-                <input class="btn btn-secondary mt-3" type="button" value="Añadir participante"/>
-                <input class="btn btn-secondary mt-3" type="button" value="Realizar"
-                onclick="sorteo()">
+                <input class="btn btn-secondary mt-3" type="button" value="Añadir participante">
+                <input class="btn btn-secondary mt-3" type="button" value="Realizar">
             </div>
         </div>
-    
-      </main>
+        <div class="col-0"></div>
+      </div>
+    </main>
+<div id="contenedor">
+
+</div>
     <footer >
-        <div class="position-fixed p-3 ">
-            <h4 class="display-5 text-center">Creado por inserta-grupo2023-2</h4>
-        </div>
+      <div class="card-footer fixed-bottom p-3">
+        <h4 class="display-5 text-center">Creado por inserta-grupo2023-2</h4>
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-
-        </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
