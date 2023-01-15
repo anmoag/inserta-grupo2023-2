@@ -1,9 +1,45 @@
 body{
-    background-color: #dedbdb;
-    
+    background-color: #69c89d;    
 }
 
 .pietarjeta{
-    background-color: #615e5e;
+    background-color: #615e5e;    
+}
+
+header{
+    background-color: black;
+    color: teal;
+    box-shadow: 20px 20px 60px 60px  teal; 
+}
+
+footer{
+    height: 100px;
+    background-color: black;
+    color:teal;
+    box-shadow: 20px -20px 60px 60px teal;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.5em;
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+#boton{
+    background-color: black;
+    color: teal;
+    width: 20%;
+    height: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+
 
 }
+
+#participantes{
+    background-color: #abd8c4;
+    
+}
+
+#tarjeta{
+    border: solid 2px rgb(87, 160, 110);
+    border-radius: 8px;
+}
+
