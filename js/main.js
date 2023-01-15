@@ -2,9 +2,7 @@
 
 function crearArray() {
     var stringParticipantes = document.querySelector("#participantes").value;  
-    if (stringParticipantes == "") {
-        alert("Debes de Poner los participantes separado por una coma");
-     }else{
+    
     var arrayParticipantes = stringParticipantes.value.split(",");
    
     var main = document.querySelector("#main");
@@ -41,7 +39,7 @@ function crearArray() {
     }
     table.appendChild(tbody);
     document.querySelector("main").appendChild(table);
-}
+
 }
 
 function desordenarArray(arrayParticipantes) {
