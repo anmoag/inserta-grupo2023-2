@@ -18,20 +18,22 @@
         <h1 class="display-1 p-3 text-center">Sorteo amigo invisible</h1>
     </header>
 
-    <main>
+    <main id="main">
         <div class="row mt-5">
-            <div class="col-3">
+            <div class="col-4">
 
             </div>
-            <div class="col-6">
+            <div class="col-4">
                 <div id="tarjeta" class="card mb-5 ">
                     <img src="img/16692260977123.png" class="card-img-top" alt="imagen papá noel top secret" />
                     <div class="card-body pietarjeta">
                         <input id="participantes" type="text area" class="form-control" placeholder="Intruduzca paticipantes del sorteo separados por coma" aria-label="Username" aria-describedby="addon-wrapping">
-                        <input id="boton" class="btn mt-3" type="button" value="Realizar sorteo" onclick="crearArray()" />
+                        <!--quiero hacer salto de linea en el boton-->
+                        <button id="boton" class="btn mt-3" type="button" value="Realizar sorteo" onclick="crearArray()">Realizar Sorteo</button>
+                        
                     </div>
                 </div>
-                <div class="col-3"></div>
+                <div class="col-4"></div>
             </div>
     </main>
     <div id="contenedor">
