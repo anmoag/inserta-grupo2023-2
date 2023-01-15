@@ -1,7 +1,7 @@
 //me quedan los condicionantes del resultado 
 
 function crearArray() {
-    var stringParticipantes = document.querySelector("#participantes").value;  
+    var stringParticipantes = document.querySelector("#participantes");  
     
     var arrayParticipantes = stringParticipantes.value.split(",");
    
