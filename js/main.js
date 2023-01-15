@@ -21,19 +21,21 @@ function crearArray() {
     tr1.appendChild(th2);
     thead.appendChild(tr1);
     table.appendChild(thead);
-    var arrayParticipantes = stringParticipantes.value.split(",");
-
-    for (var i = 0; i < arrayParticipantes.length; i++) {
+    var indiceSiguiente = 0;
+    for (var i = 0; i < arrayDesordenado.length; i++) {
         var tr = document.createElement("tr");
         var td1 = document.createElement("td");
         var td2 = document.createElement("td");
-        td1.innerHTML = arrayParticipantes[i];
-        td2.innerHTML = arrayDesordenado[i];
+        td1.innerHTML = arrayDesordenado[i];
+        if (indiceSiguiente === i) {
+            indiceSiguiente = (indiceSiguiente + 1) % arrayDesordenado.length;
+        }
+        td2.innerHTML = arrayDesordenado[indiceSiguiente];
         tr.appendChild(td1);
         tr.appendChild(td2);
         tbody.appendChild(tr);
+        indiceSiguiente = (indiceSiguiente + 1) % arrayDesordenado.length;
     }
-
     table.appendChild(tbody);
     document.querySelector("main").appendChild(table);
 }
