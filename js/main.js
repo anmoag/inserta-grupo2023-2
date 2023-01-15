@@ -21,7 +21,6 @@ function crearArray() {
     tr1.appendChild(th2);
     thead.appendChild(tr1);
     table.appendChild(thead);
-    //vuelvo a cupturar el array porque lo piso en algun momento y no se cuando
     var arrayParticipantes = stringParticipantes.value.split(",");
 
     for (var i = 0; i < arrayParticipantes.length; i++) {
@@ -29,7 +28,7 @@ function crearArray() {
         var td1 = document.createElement("td");
         var td2 = document.createElement("td");
         td1.innerHTML = arrayParticipantes[i];
-        td2.innerHTML = arrayParticipantes[arrayDesordenado[i]];
+        td2.innerHTML = arrayDesordenado[i];
         tr.appendChild(td1);
         tr.appendChild(td2);
         tbody.appendChild(tr);
