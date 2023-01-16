@@ -1,15 +1,10 @@
-//me quedan los condicionantes del resultado 
-
 function crearArray() {
     var stringParticipantes = document.querySelector("#participantes");  
-    
     var arrayParticipantes = stringParticipantes.value.split(",");
-   
     var main = document.querySelector("#main");
     main.innerHTML = "";
     var arrayDesordenado = desordenarArray(arrayParticipantes);
     var table = document.createElement("table");
-    //Si uso classlist no me aparece la tabla
     table.setAttribute("class", "table table-striped-columns");
     var thead = document.createElement("thead");
     var tbody = document.createElement("tbody");
